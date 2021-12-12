@@ -31,7 +31,7 @@ class _ConsultPageState extends State<ConsultPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.pink[200],
+        backgroundColor: Colors.purple[200],
         onPressed: (){
           _makePhoneCall("+91 - 1111111111");
         },
@@ -39,13 +39,12 @@ class _ConsultPageState extends State<ConsultPage> {
       ),
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal:8.0,vertical: 16.0),
+          padding: const EdgeInsets.symmetric(horizontal:8.0,vertical: 13.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             mainAxisSize: MainAxisSize.max,
             children: [
               Text("Consult with doctor on video Or voice call",style: TextStyle(fontFamily: 'dsc',fontSize: 30),textAlign: TextAlign.center,),
-              Text("24 * 7 hr",style: TextStyle(fontFamily: 'dsc',fontSize: 30),),
               Image(image: AssetImage('assets/doctor.png'),)
             ],
           ),

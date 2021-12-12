@@ -22,10 +22,10 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner:  false,
         theme: ThemeData(
-          primaryColor: Colors.pink[200],
-         primarySwatch: Colors.pink,
-            buttonColor: Colors.pinkAccent,
-         accentColor: Colors.pinkAccent,
+          primaryColor: Colors.purple[200],
+         primarySwatch: Colors.purple,
+            buttonColor: Colors.purpleAccent,
+         accentColor: Colors.purpleAccent,
          fontFamily: 'Lato',
         ),
         home: Wrapper(),

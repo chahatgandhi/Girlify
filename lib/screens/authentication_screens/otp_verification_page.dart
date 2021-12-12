@@ -106,7 +106,7 @@ class _OtpCodeVerificationScreenState extends State<OtpCodeVerificationScreen> {
                   padding: EdgeInsets.all(25.0),
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                    image: AssetImage('assets/madOtp.png'),
+                    image: AssetImage('assets/logo.png'),
                     fit: BoxFit.cover,
                   )),
                 ),
@@ -119,34 +119,13 @@ class _OtpCodeVerificationScreenState extends State<OtpCodeVerificationScreen> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(
-                              'SUV',
-                              style: TextStyle(
-                                  fontFamily:'Uncial',
-                                  fontSize: 45,
-                                  // fontWeight: FontWeight.bold,
-                                  fontWeight: FontWeight.w900,
-                                  letterSpacing: 5.0
-                                //color: Colors.white,
-
-                              ),
-                            ),
+                          
                             CircleAvatar(
                               radius: 35,
-                              backgroundImage: AssetImage('assets/feminine.png'),
+                              backgroundImage: AssetImage('assets/logo.png'),
                               backgroundColor: Color.fromRGBO(120, 120, 120, 0),
                             ),
-                            Text(
-                              'DHA',
-                              style: TextStyle(
-                                fontFamily:'Uncial',
-                                fontSize: 45,
-                                letterSpacing: 5.0,
-                                fontWeight: FontWeight.w900,
-                                //color: Colors.white,
-
-                              ),
-                            ),
+                           
                           ],
                         ),
                         SizedBox(
@@ -222,8 +201,8 @@ class _OtpCodeVerificationScreenState extends State<OtpCodeVerificationScreen> {
                                   pinTheme: PinTheme(
                                     inactiveFillColor: Colors.white,
                                     inactiveColor: Colors.teal,
-                                    activeColor: Colors.pinkAccent,
-                                    selectedColor: Colors.pink,
+                                    activeColor: Colors.purpleAccent,
+                                    selectedColor: Colors.purple,
                                     shape: PinCodeFieldShape.underline,
                                     // borderRadius: BorderRadius.circular(5),
                                     fieldHeight: 40,
@@ -278,7 +257,7 @@ class _OtpCodeVerificationScreenState extends State<OtpCodeVerificationScreen> {
                                               text:
                                                   "${count.toString()} seconds",
                                               style: TextStyle(
-                                                  color: Colors.pink,
+                                                  color: Colors.purple,
                                                   fontWeight: FontWeight.bold,
                                                   fontSize: 15)),
                                         ],

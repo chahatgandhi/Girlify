@@ -98,7 +98,7 @@ class _ShopPageState extends State<ShopPage> {
       appBar: AppBar(
           title: Padding(
             padding: const EdgeInsets.only(top: 8.0),
-            child: Text("NEAREST STORES", style: TextStyle(color: Colors.white, letterSpacing: 1.2,fontWeight: FontWeight.bold, fontFamily: "CinzelDecorative")),
+            child: Text("Nearest Stores", style: TextStyle(color: Colors.white, letterSpacing: 1.2,fontWeight: FontWeight.bold, fontFamily: "fredoka-one")),
           ),
           actions: [
             Padding(

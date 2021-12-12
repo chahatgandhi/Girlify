@@ -18,7 +18,7 @@ class _ChatPageState extends State<ChatPage> {
     TextEditingController ques = TextEditingController();
     return Scaffold(
       body: Container(
-         color: Colors.pink[50],
+         color: Colors.purple[50],
         child: Stack(
           children: [
             StreamBuilder(
@@ -34,7 +34,7 @@ class _ChatPageState extends State<ChatPage> {
                     return Card(
                       elevation: 1.0,
                       margin: EdgeInsets.all(8.0),
-                      // color: Colors.pink.shade50,
+                      // color: Colors.purple.shade50,
                       child: Padding(
                         padding: const EdgeInsets.all(12.0),
                         child: Column(

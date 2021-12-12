@@ -35,24 +35,24 @@ class _MainPageState extends State<MainPage> {
 
           SalomonBottomBarItem(
             icon: Icon(Icons.home),
-            title: Text("Home",style: TextStyle(fontFamily: "Merienda"),),
-            selectedColor: Colors.pink,
+            title: Text("Home",style: TextStyle(fontFamily: "fredoka-one"),),
+            selectedColor: Colors.purple,
           ),
 
           SalomonBottomBarItem(
             icon: Icon(Icons.shopping_basket),
-            title: Text("Shop",style: TextStyle(fontFamily: "Merienda"),),
-            selectedColor: Colors.pink,
+            title: Text("Shop",style: TextStyle(fontFamily: "fredoka-one"),),
+            selectedColor: Colors.purple,
           ),
           SalomonBottomBarItem(
             icon: Icon(Icons.local_hospital),
-            title: Text("Consult",style: TextStyle(fontFamily: "Merienda"),),
-            selectedColor: Colors.pink,
+            title: Text("Consult",style: TextStyle(fontFamily: "fredoka-one"),),
+            selectedColor: Colors.purple,
           ),
           SalomonBottomBarItem(
             icon: Icon(Icons.help),
-            title: Text("FAQ",style: TextStyle(fontFamily: "Merienda"),),
-            selectedColor: Colors.pink,
+            title: Text("FAQ",style: TextStyle(fontFamily: "fredoka-one"),),
+            selectedColor: Colors.purple,
           ),
         ],
       ),

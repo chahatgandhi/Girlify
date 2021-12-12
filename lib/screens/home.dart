@@ -63,7 +63,7 @@ class _HomeState extends State<Home> {
               ),
             ),
             ListTile(
-              leading: Icon(Icons.settings, color: Colors.pink[200]),
+              leading: Icon(Icons.settings, color: Colors.purple[200]),
               title: Text('Change Menstrual details'),
               trailing: Icon(Icons.arrow_right),
               onTap: (){
@@ -72,7 +72,7 @@ class _HomeState extends State<Home> {
               },
             ),
             ListTile(
-              leading: Icon(Icons.notifications, color: Colors.pink[200]),
+              leading: Icon(Icons.notifications, color: Colors.purple[200]),
               title: Text('Notifications'),
               trailing: Icon(Icons.arrow_right),
               onTap: (){
@@ -81,7 +81,7 @@ class _HomeState extends State<Home> {
               },
             ),
             ListTile(
-              leading: Icon(Icons.logout, color: Colors.pink[200]),
+              leading: Icon(Icons.logout, color: Colors.purple[200]),
               title: Text('Log Out'),
               trailing: Icon(Icons.arrow_right),
               onTap: (){
@@ -95,17 +95,17 @@ class _HomeState extends State<Home> {
                       MaterialButton(onPressed: (){
                         AuthService().signOut();
                         Navigator.pop(context);
-                      }, child: Text('Yes'),color: Colors.pink[100],),
+                      }, child: Text('Yes'),color: Colors.purple[100],),
                       MaterialButton(onPressed: (){
                         Navigator.pop(context);
-                      }, child: Text('No'),color: Colors.pink[100],)
+                      }, child: Text('No'),color: Colors.purple[100],)
                     ],
                   );
                 });
               },
             ),
             ListTile(
-              leading: Icon(Icons.delete, color: Colors.pink[200]),
+              leading: Icon(Icons.delete, color: Colors.purple[200]),
               title: Text('Delete Account'),
               trailing: Icon(Icons.arrow_right),
               onTap: (){
@@ -119,17 +119,17 @@ class _HomeState extends State<Home> {
                       MaterialButton(onPressed: (){
                         AuthService().deleteUser();
                         Navigator.pop(context);
-                      }, child: Text('Yes'),color: Colors.pink[100],),
+                      }, child: Text('Yes'),color: Colors.purple[100],),
                       MaterialButton(onPressed: (){
                         Navigator.pop(context);
-                      }, child: Text('No'),color: Colors.pink[100],),
+                      }, child: Text('No'),color: Colors.purple[100],),
                     ],
                   );
                 });
               },
             ),
             ListTile(
-              leading: Icon(Icons.help, color: Colors.pink[200]),
+              leading: Icon(Icons.help, color: Colors.purple[200]),
               title: Text('Want to Contribute ?'),
               trailing: Icon(Icons.arrow_right),
               onTap: (){
@@ -143,7 +143,7 @@ class _HomeState extends State<Home> {
               },
             ),
             ListTile(
-              leading: Icon(Icons.bug_report_sharp, color: Colors.pink[200]),
+              leading: Icon(Icons.bug_report_sharp, color: Colors.purple[200]),
               title: Text('Report an Issue'),
               trailing: Icon(Icons.arrow_right),
               onTap: (){
@@ -164,7 +164,7 @@ class _HomeState extends State<Home> {
         iconTheme: IconThemeData(color: Colors.white),
         title: Padding(
           padding: const EdgeInsets.only(top:8.0),
-          child: Text('Period Tracker', style: TextStyle(color: Colors.white,fontFamily: "CinzelDecorative",letterSpacing: 1.2,fontSize: 22,fontWeight: FontWeight.bold),),
+          child: Text('Period Tracker', style: TextStyle(color: Colors.white,fontFamily: "fredoka-one",letterSpacing: 1.2,fontSize: 22,fontWeight: FontWeight.bold),),
         ),
 
       ),
@@ -227,8 +227,8 @@ class _HomeState extends State<Home> {
                             borderRadius: BorderRadius.all(Radius.circular(10)),
                             gradient: LinearGradient(
                               colors: [
-                                Colors.pink[a],
-                                Colors.pink[b]
+                                Colors.purple[a],
+                                Colors.purple[b]
                               ]
                             )
                           ),
@@ -246,7 +246,7 @@ class _HomeState extends State<Home> {
                         margin: const EdgeInsets.all(4.0),
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                            color: Colors.pink[50],
+                            color: Colors.purple[50],
                             borderRadius: BorderRadius.circular(30)),
                         child: Text(
                           date.day.toString(),
@@ -310,7 +310,7 @@ class _HomeState extends State<Home> {
                         children: [
                           Text("Menstrual Length :",style: TextStyle(fontSize: 20),),
                           Spacer(flex:3,),
-                          Card(color: Colors.pink[200],child: Padding(
+                          Card(color: Colors.purple[200],child: Padding(
                             padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 8),
                             child: Text("${user.menstrualLength} days",style: TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),),
                           )),
@@ -325,7 +325,7 @@ class _HomeState extends State<Home> {
                         children: [
                           Text('Period Length :',style: TextStyle(fontSize: 20),),
                           Spacer(flex:3,),
-                          Card(color: Colors.pink[200],child: Padding(
+                          Card(color: Colors.purple[200],child: Padding(
                             padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 8),
                             child: Text("${user.periodLength} days",style: TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),),
                           )),
@@ -340,7 +340,7 @@ class _HomeState extends State<Home> {
                         children: [
                           Text("Last Menstruation :",style: TextStyle(fontSize: 20),),
                           Spacer(flex:3,),
-                          Card(color: Colors.pink[200],child: Padding(
+                          Card(color: Colors.purple[200],child: Padding(
                             padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 8),
                             child: Text(user.lastMenstruation.length==0?" ":'${user.lastMenstruation[user.lastMenstruation.length-1].day.toString()}/${user.lastMenstruation[user.lastMenstruation.length-1].month.toString()}/${user.lastMenstruation[user.lastMenstruation.length-1].year.toString()}',
                               style: TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),),

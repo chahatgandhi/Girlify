@@ -19,10 +19,14 @@ class _RegisterState extends State<Register> {
           Container(
             padding: EdgeInsets.all(25.0),
             decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/madOtp.png'),
-                  fit: BoxFit.cover,
-                )),
+              gradient: LinearGradient(
+              begin: Alignment.topRight,
+              end: Alignment.bottomLeft,
+              colors: [
+                Colors.purple[900],
+                Colors.white,
+              ],
+            )),
           ),
           Center(
             child: SingleChildScrollView(
@@ -37,34 +41,34 @@ class _RegisterState extends State<Register> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        'SUV',
-                        style: TextStyle(
-                          fontFamily:'Uncial',
-                          fontSize: 45,
-                          // fontWeight: FontWeight.bold,
-                            fontWeight: FontWeight.w900,
-                            letterSpacing: 5.0
-                          //color: Colors.white,
+                      // Text(
+                      //   'SUV',
+                      //   style: TextStyle(
+                      //     fontFamily:'Uncial',
+                      //     fontSize: 45,
+                      //     // fontWeight: FontWeight.bold,
+                      //       fontWeight: FontWeight.w900,
+                      //       letterSpacing: 5.0
+                      //     //color: Colors.white,
 
-                        ),
-                      ),
+                      //   ),
+                      // ),
                       CircleAvatar(
-                        radius: 35,
-                        backgroundImage: AssetImage('assets/feminine.png'),
-                        backgroundColor: Color.fromRGBO(120, 120, 120, 0),
+                        radius: 120,
+                        backgroundImage: AssetImage('assets/logo.png'),
+                        backgroundColor: Color.fromRGBO(0,0,0, 0),
                       ),
-                      Text(
-                        'DHA',
-                        style: TextStyle(
-                          fontFamily:'Uncial',
-                          fontSize: 45,
-                          letterSpacing: 5.0,
-                          fontWeight: FontWeight.w900,
-                          //color: Colors.white,
+                      // Text(
+                      //   'DHA',
+                      //   style: TextStyle(
+                      //     fontFamily:'Uncial',
+                      //     fontSize: 45,
+                      //     letterSpacing: 5.0,
+                      //     fontWeight: FontWeight.w900,
+                      //     //color: Colors.white,
 
-                        ),
-                      ),
+                        // ),
+                      // ),
                     ],
                   ),
                   SizedBox(height: 50,),
@@ -143,7 +147,7 @@ class _RegisterState extends State<Register> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0)),
                     elevation: 8.0,
-                    color: Colors.pink[300],
+                    color: Colors.purple[900],
                     child: Text('  Continue  ',
                       style: TextStyle(
                         fontSize: 25,

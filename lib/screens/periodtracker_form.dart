@@ -42,7 +42,7 @@ class _PeriodTrackerFormState extends State<PeriodTrackerForm> {
                     Padding(
                       padding: const EdgeInsets.all(12.0),
                       child: Divider(
-                        color: Colors.pink[500],
+                        color: Colors.purple[500],
                         height: 10,
                         thickness: 2,
                         indent: 10,
@@ -54,7 +54,7 @@ class _PeriodTrackerFormState extends State<PeriodTrackerForm> {
                     ),
                   Card(
                     shape: RoundedRectangleBorder(
-                        side: BorderSide(color: Colors.pink[400], width: 2.0),
+                        side: BorderSide(color: Colors.purple, width: 2.0),
                         borderRadius: BorderRadius.circular(10.0)
                     ),
                     child: Padding(
@@ -66,7 +66,7 @@ class _PeriodTrackerFormState extends State<PeriodTrackerForm> {
 
                           DropdownButton(
                             style: TextStyle(color: Colors.black),
-                            // dropdownColor: Colors.pinkAccent[100],
+                            // dropdownColor: Colors.purpleAccent[100],
                             isDense: false,
                               hint: Text('Select value'),
                               value: mLength,
@@ -90,7 +90,7 @@ class _PeriodTrackerFormState extends State<PeriodTrackerForm> {
                     SizedBox(height: 10,),
                     Card(
                       shape: RoundedRectangleBorder(
-                          side: BorderSide(color: Colors.pink[500], width: 2.0),
+                          side: BorderSide(color: Colors.purple[500], width: 2.0),
                           borderRadius: BorderRadius.circular(10.0)
                       ),
                       child: Padding(
@@ -123,7 +123,7 @@ class _PeriodTrackerFormState extends State<PeriodTrackerForm> {
                     SizedBox(height: 10),
                     Card(
                       shape: RoundedRectangleBorder(
-                          side: BorderSide(color: Colors.pink[500], width: 2.0),
+                          side: BorderSide(color: Colors.purple[500], width: 2.0),
                           borderRadius: BorderRadius.circular(10.0)
                       ),
                       child: Padding(
@@ -135,7 +135,7 @@ class _PeriodTrackerFormState extends State<PeriodTrackerForm> {
                             ElevatedButton(
                               //TODO:1 update me
                                 style: ElevatedButton.styleFrom(
-                                  primary: Colors.pink[200]
+                                  primary: Colors.purple[200]
                                 ),
                                 child: Text(_dateTime == null ? '${DateTime.now().day.toString()}/${DateTime.now().month.toString()}/${DateTime.now().year.toString()}': '${_dateTime.day.toString()}/${_dateTime.month.toString()}/${_dateTime.year.toString()}'),
                                 onPressed: (){
@@ -158,7 +158,7 @@ class _PeriodTrackerFormState extends State<PeriodTrackerForm> {
                     SizedBox(height: 10,),
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.pink[200],
+                        primary: Colors.purple[200],
                       ),
                       onPressed: () {
                         if(_dateTime!=null )

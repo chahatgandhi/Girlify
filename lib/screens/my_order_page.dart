@@ -33,7 +33,7 @@ class _MyPlaceOrderPageState extends State<MyPlaceOrderPage> {
         ),      ),
       body: SafeArea(
         child: userReq.length!=0?Container(
-         // color: Colors.pink[50],
+         // color: Colors.purple[50],
           child: SingleChildScrollView(
             child: ListView.builder(
                 physics: NeverScrollableScrollPhysics(),
@@ -165,10 +165,10 @@ class _MyPlaceOrderPageState extends State<MyPlaceOrderPage> {
                                           MaterialButton(onPressed: (){
                                               RequestDatabase().rejectRequest(userReq[index].uid, "S", "I CANCELLED", DateTime.now().toIso8601String());
                                               Navigator.pop(context);
-                                          }, child: Text('Yes'),color: Colors.pink[100],),
+                                          }, child: Text('Yes'),color: Colors.purple[100],),
                                           MaterialButton(onPressed: (){
                                             Navigator.pop(context);
-                                          }, child: Text('No'),color: Colors.pink[100],)
+                                          }, child: Text('No'),color: Colors.purple[100],)
                                         ],
                                       );
                                     });
@@ -200,10 +200,10 @@ class _MyPlaceOrderPageState extends State<MyPlaceOrderPage> {
                                                 MaterialButton(onPressed: (){
                                                   RequestDatabase().orderDelivered(userReq[index].uid, "STATUS_COMPLETED");
                                                   Navigator.pop(context);
-                                                }, child: Text('Yes'),color: Colors.pink[100],),
+                                                }, child: Text('Yes'),color: Colors.purple[100],),
                                                 MaterialButton(onPressed: (){
                                                   Navigator.pop(context);
-                                                }, child: Text('No'),color: Colors.pink[100],)
+                                                }, child: Text('No'),color: Colors.purple[100],)
                                               ],
                                             );
                                           });
@@ -227,7 +227,7 @@ class _MyPlaceOrderPageState extends State<MyPlaceOrderPage> {
                                                 actions: [
                                                   MaterialButton(onPressed: (){
                                                     Navigator.pop(context);
-                                                  },child: Text('Ok'),color: Colors.pink[200],)
+                                                  },child: Text('Ok'),color: Colors.purple[200],)
                                                 ],
                                               );
                                             });

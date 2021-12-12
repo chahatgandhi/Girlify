@@ -62,7 +62,7 @@ class _ItemShoppingPageState extends State<ItemShoppingPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Card(
-                          color: Colors.pink[200],
+                          color: Colors.purple[200],
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Column(
@@ -170,14 +170,14 @@ class _ItemShoppingPageState extends State<ItemShoppingPage> {
                               child: Text("Available Items",
                                   style: TextStyle(
                                       fontSize: 20,
-                                      fontFamily: "Merienda",
+                                      fontFamily: "fredoka-one",
                                       fontWeight: FontWeight.bold)),
                             ),
                             Expanded(
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Divider(
-                                  color: Colors.pink,
+                                  color: Colors.purple,
                                   height: 10,
                                   thickness: 2,
                                   indent: 10,
@@ -188,14 +188,14 @@ class _ItemShoppingPageState extends State<ItemShoppingPage> {
                           ],
                         ),
                         Container(
-                          color: Colors.pink[100],
+                          color: Colors.purple[100],
                           child: ListView.builder(
                               physics: NeverScrollableScrollPhysics(),
                               shrinkWrap: true,
                               itemCount: items.length,
                               itemBuilder: (_, index) {
                                 return Card(
-                                  //color: Colors.pink[50],
+                                  //color: Colors.purple[50],
                                   child: Padding(
                                     padding: const EdgeInsets.all(12.0),
                                     child: Column(
@@ -283,7 +283,7 @@ class _ItemShoppingPageState extends State<ItemShoppingPage> {
                                                 shape: RoundedRectangleBorder(
                                                   borderRadius: BorderRadius.circular(10),
                                                 ),
-                                                color: Colors.pink[200],
+                                                color: Colors.purple[200],
                                                 onPressed: () {
                                                   if (finalCart.containsKey(
                                                           items[index]) ==

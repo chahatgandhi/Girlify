@@ -68,7 +68,7 @@ class _FinalCartState extends State<FinalCart> {
                   Padding(
                     padding: const EdgeInsets.all(12.0),
                     child: Divider(
-                      color: Colors.pink[500],
+                      color: Colors.purple[500],
                       height: 10,
                       thickness: 2,
                       indent: 10,
@@ -130,7 +130,7 @@ class _FinalCartState extends State<FinalCart> {
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Divider(
-                              color: Colors.pink[500],
+                              color: Colors.purple[500],
                               height: 10,
                               thickness: 2,
                               indent: 10,
@@ -145,7 +145,7 @@ class _FinalCartState extends State<FinalCart> {
                     clipBehavior: Clip.antiAlias,
                     scrollDirection: Axis.horizontal,
                     child: DataTable(
-                      headingRowColor: MaterialStateProperty.resolveWith((states) => Colors.pink[100]),
+                      headingRowColor: MaterialStateProperty.resolveWith((states) => Colors.purple[100]),
                       columns: const <DataColumn>[
                         DataColumn(
                           label: Text(
@@ -204,7 +204,7 @@ class _FinalCartState extends State<FinalCart> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                       Card(
-                          color: Colors.pink[50],
+                          color: Colors.purple[50],
                           elevation:0.6,
                           child: Padding(
 
@@ -222,7 +222,7 @@ class _FinalCartState extends State<FinalCart> {
                     ],
                   )):Container(),
                   totalPrice!=0?MaterialButton(
-                    color: Colors.pink[200],
+                    color: Colors.purple[200],
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -245,10 +245,10 @@ class _FinalCartState extends State<FinalCart> {
                               ShopkeeperDatabase(uid: widget.shopkeeper.uid).addRequestId(shopkeeperReqIds);
                               Fluttertoast.showToast(msg: 'Order Place Successfully. Go to shopping History',toastLength: Toast.LENGTH_LONG);
                               Navigator.pop(context,"YES");
-                            }, child: Text('Yes'),color: Colors.pink[100],),
+                            }, child: Text('Yes'),color: Colors.purple[100],),
                             MaterialButton(onPressed: (){
                               Navigator.pop(context,"NO");
-                            }, child: Text('No'),color: Colors.pink[100],)
+                            }, child: Text('No'),color: Colors.purple[100],)
                           ],
                         );
                       });

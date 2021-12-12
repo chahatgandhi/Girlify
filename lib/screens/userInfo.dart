@@ -43,7 +43,7 @@ class _FormPageState extends State<FormPage> {
                     Padding(
                       padding: const EdgeInsets.all(12.0),
                       child: Divider(
-                        color: Colors.pink[500],
+                        color: Colors.purple[500],
                         height: 10,
                         thickness: 2,
                         indent: 10,
@@ -100,7 +100,7 @@ class _FormPageState extends State<FormPage> {
                     Card(
                         color: Colors.white54,
                         shape: RoundedRectangleBorder(
-                            side: BorderSide(color: Colors.pink[500], width: 2.0),
+                            side: BorderSide(color: Colors.purple[500], width: 2.0),
                             borderRadius: BorderRadius.circular(5.0)),
                         child: Padding(
                           padding: const EdgeInsets.all(10.0),
@@ -122,7 +122,7 @@ class _FormPageState extends State<FormPage> {
                     ),
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.pink[200]
+                        primary: Colors.purple[200]
                       ),
                       onPressed: () {
                         if (_formKey.currentState.validate()) {

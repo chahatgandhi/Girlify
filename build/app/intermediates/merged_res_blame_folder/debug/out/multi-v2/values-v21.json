@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\iec20\\AndroidStudioProjects\\Suvidha\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "F:\\suvidha\\Suvidha\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\iec20\\.gradle\\caches\\transforms-2\\files-2.1\\8b719277ab03e8adbfe1b89e4b72d1d4\\core-1.2.0\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\chahat\\.gradle\\caches\\transforms-2\\files-2.1\\8b719277ab03e8adbfe1b89e4b72d1d4\\core-1.2.0\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

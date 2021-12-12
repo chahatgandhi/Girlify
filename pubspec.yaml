@@ -69,9 +69,9 @@ flutter:
     - family: Overpass
       fonts:
         - asset: assets/Overpass.ttf
-    - family: Merienda
+    - family: fredoka-one
       fonts:
-        - asset: assets/Merienda-Regular.ttf
+        - asset: assets/FredokaOne-Regular.ttf
     - family: Signika
       fonts:
         - asset: assets/Signika.ttf
